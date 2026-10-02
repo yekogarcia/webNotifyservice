@@ -1,0 +1,15 @@
+.stack {
+  position: fixed; right: 1rem; bottom: 1rem; z-index: 60;
+  display: grid; gap: 0.5rem; max-width: min(23.75rem, 90vw);
+}
+.toast {
+  text-align: left; cursor: pointer;
+  border: 0.0625rem solid var(--border); border-radius: var(--radius-md);
+  padding: 0.75rem 1rem; background: var(--surface); box-shadow: var(--shadow-card);
+  font-size: 0.875rem;
+  transition: border-color var(--dur-hover) var(--ease), transform var(--dur-hover) var(--ease);
+}
+.toast:hover { border-color: var(--surface-hover); }
+.success { border-left: 0.25rem solid var(--success); }
+.error { border-left: 0.25rem solid var(--danger); }
+.info { border-left: 0.25rem solid var(--info); }

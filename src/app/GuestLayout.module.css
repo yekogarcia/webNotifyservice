@@ -1,0 +1,67 @@
+.page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  position: relative;
+}
+.page::before {
+  content: '';
+  position: absolute;
+  inset: auto auto 10% 12%;
+  width: 35rem; height: 35rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.14), transparent 65%);
+  pointer-events: none;
+}
+.page::after {
+  content: '';
+  position: absolute;
+  inset: 12% 10% auto auto;
+  width: 26.25rem;
+  height: 26.25rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.12), transparent 68%);
+  pointer-events: none;
+}
+.shell {
+  position: relative;
+  z-index: 1;
+  width: min(28.75rem, 100%);
+}
+.card {
+  position: relative;
+  background: var(--surface);
+  border: 0.0625rem solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-card);
+  display: grid;
+  gap: 1.125rem;
+}
+.card :global(form) { display: grid; gap: 0.25rem; }
+.card :global(button[type='submit']) { width: 100%; margin-top: 0.5rem; }
+.brandRow { display: flex; align-items: center; gap: 0.625rem; }
+.brandMark {
+  width: 2.25rem; height: 2.25rem; border-radius: 0.3125rem;
+  display: grid; place-items: center; flex: none;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-purple-bright));
+  box-shadow: var(--shadow-glow-purple);
+}
+.brand { font-weight: 700; font-size: 1.25rem; letter-spacing: -0.01em; }
+.brandSub {
+  margin-top: 0.125rem;
+  color: var(--text-dim);
+  font-size: 0.75rem;
+}
+
+@media (max-width: 35em) {
+  .page {
+    padding: 1rem;
+  }
+  .card {
+    padding: 1.25rem;
+  }
+}

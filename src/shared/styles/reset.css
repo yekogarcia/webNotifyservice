@@ -1,0 +1,43 @@
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html, body, #root { min-height: 100%; }
+body {
+  font-family: var(--font-sans);
+  background:
+    radial-gradient(56.25rem 26.25rem at 85% -5%, rgba(139, 92, 246, 0.08), transparent 60%),
+    radial-gradient(43.75rem 23.75rem at 10% 0%, rgba(37, 99, 235, 0.07), transparent 60%),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.4;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+h1, h2, h3 { line-height: 1.4; letter-spacing: -0.01em; }
+h1 { font-size: 1.5rem; font-weight: 600; }
+h2 { font-size: 1.125rem; font-weight: 600; }
+p { line-height: 1.4; }
+a { color: var(--accent-purple); text-decoration: none; transition: color var(--dur-hover) var(--ease); }
+a:hover { color: var(--accent-purple-bright); text-decoration: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+img { max-width: 100%; display: block; }
+::placeholder { color: var(--text-dim); }
+::selection { background: rgba(139, 92, 246, 0.35); }
+:focus-visible { outline: 0.125rem solid var(--accent-purple); outline-offset: 0.125rem; border-radius: 0.3125rem; }
+html {
+  scrollbar-color: var(--border) var(--bg);
+}
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+body::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+body::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 62.4375rem;
+}

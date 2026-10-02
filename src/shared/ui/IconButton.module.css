@@ -1,0 +1,28 @@
+.iconBtn {
+  width: 2.125rem;
+  height: 2.125rem;
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  background: var(--surface-2);
+  border: 0.0625rem solid var(--border);
+  border-radius: 0.3125rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background var(--dur-hover) var(--ease), color var(--dur-hover) var(--ease), border-color var(--dur-hover) var(--ease);
+}
+.iconBtn:hover:not(:disabled) { background: var(--surface-hover); color: var(--text); border-color: var(--surface-hover); }
+.iconBtn:disabled { opacity: 0.5; cursor: not-allowed; }
+.iconBtn svg { width: 1rem; height: 1rem; }
+.primary {
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-purple-bright));
+  border-color: transparent;
+  color: #fff;
+}
+.primary:hover:not(:disabled) { filter: brightness(1.06); color: #fff; }
+.danger {
+  background: rgba(248, 113, 113, 0.14);
+  border-color: rgba(248, 113, 113, 0.4);
+  color: #fca5a5;
+}
+.danger:hover:not(:disabled) { background: rgba(248, 113, 113, 0.22); color: #fca5a5; border-color: rgba(248, 113, 113, 0.4); }

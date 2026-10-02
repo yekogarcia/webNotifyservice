@@ -1,0 +1,18 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.3125rem;
+  padding: 0.1875rem 0.6875rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border: 0.0625rem solid var(--border);
+  background: var(--surface-2);
+  white-space: nowrap;
+}
+.neutral { color: var(--text-muted); }
+.info { color: #7dd3fc; border-color: rgba(14, 165, 233, 0.4); background: rgba(14, 165, 233, 0.1); }
+.success { color: #6ee7b7; border-color: rgba(52, 211, 153, 0.4); background: rgba(52, 211, 153, 0.1); }
+.warning { color: #fcd34d; border-color: rgba(245, 158, 11, 0.4); background: rgba(245, 158, 11, 0.1); }
+.danger { color: #fca5a5; border-color: rgba(248, 113, 113, 0.4); background: rgba(248, 113, 113, 0.1); }
+.accent { color: #c4b5fd; border-color: rgba(139, 92, 246, 0.45); background: rgba(139, 92, 246, 0.12); }

@@ -1,0 +1,2 @@
+allowBuilds:
+  '@ckeditor/vite-plugin-ckeditor5': set this to true or false

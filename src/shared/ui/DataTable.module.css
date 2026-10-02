@@ -1,0 +1,43 @@
+.scroll {
+  overflow-x: auto;
+  border: 0.0625rem solid var(--border);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 7.5rem),
+    var(--surface);
+  box-shadow: inset 0 0.0625rem 0 rgba(255, 255, 255, 0.03);
+}
+.table {
+  width: 100%;
+  min-width: 51.25rem;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+.table th, .table td {
+  text-align: left;
+  padding: 1rem 1.125rem;
+  border-bottom: 0.0625rem solid var(--border);
+  vertical-align: middle;
+}
+.table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+  background: rgba(26, 35, 66, 0.94);
+  backdrop-filter: blur(0.625rem);
+}
+.table tbody tr { transition: background var(--dur-hover) var(--ease); }
+.table tbody tr:last-child td { border-bottom: none; }
+.table tbody tr:nth-child(even) td { background: rgba(255, 255, 255, 0.015); }
+.table tbody tr:hover td { background: var(--surface-hover); }
+
+@media (max-width: 45em) {
+  .scroll {
+    margin-inline: -0.25rem;
+  }
+}

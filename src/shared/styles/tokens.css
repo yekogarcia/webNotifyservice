@@ -1,0 +1,75 @@
+/* Design tokens — Dark UI Premium. Única fuente de verdad visual. Sin librerías externas. */
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Code', Consolas, monospace;
+
+  /* Fondos */
+  --bg: #080b17;
+  --bg-soft: #0c1328; /* sidebar */
+  --surface: #131b33; /* tarjetas */
+  --surface-2: #1a2342; /* tarjetas secundarias */
+  --surface-hover: #222e52;
+  --border: #283556;
+
+  /* Texto */
+  --text: #f4f7fc;
+  --text-muted: #9aa7c7;
+  --text-dim: #6f7c99;
+
+  /* Compat con nombres previos */
+  --bg-sidebar: var(--bg-soft);
+  --surface-3: var(--surface-hover);
+
+  /* Acentos */
+  --accent-purple: #8b5cf6;
+  --accent-purple-bright: #a855f7;
+  --accent-pink: #ec4899;
+  --accent-blue: #2563eb;
+  --accent-sky: #0ea5e9;
+  --accent-orange: #f97316;
+  --accent-amber: #f59e0b;
+
+  /* Semánticos mapeados a acentos (mantiene API de Badge/Toasts) */
+  --primary: #8b5cf6;
+  --primary-strong: #7c3aed;
+  --primary-glow: rgba(139, 92, 246, 0.28);
+  --success: #34d399;
+  --warning: #f59e0b;
+  --danger: #f87171;
+  --info: #0ea5e9;
+
+  /* Radios — estándar global: 0.3125rem en todos los componentes */
+  --radius-sm: 0.3125rem;
+  --radius-md: 0.3125rem;
+  --radius-lg: 0.3125rem;
+  --radius-pill: 0.3125rem;
+
+  /* Espaciado */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+
+  /* Layout */
+  --sidebar-w: 15rem;
+  --navbar-h: 4.5rem;
+  --content-gap: 1.5rem;
+  --content-max: 90rem;
+
+  /* Sombras — glow controlado, sin neón */
+  --shadow: 0 0.75rem 2rem rgba(2, 6, 18, 0.55);
+  --shadow-card: 0 0.75rem 2rem rgba(2, 6, 18, 0.5);
+  --shadow-glow-purple: 0 0 0 0.0625rem rgba(139, 92, 246, 0.22), 0 0.5rem 1.75rem rgba(139, 92, 246, 0.16);
+  --shadow-glow-blue: 0 0 0 0.0625rem rgba(37, 99, 235, 0.22), 0 0.5rem 1.75rem rgba(37, 99, 235, 0.14);
+  --shadow-glow-orange: 0 0 0 0.0625rem rgba(249, 115, 22, 0.2), 0 0.5rem 1.75rem rgba(249, 115, 22, 0.12);
+
+  /* Animaciones */
+  --dur-hover: 180ms;
+  --dur-card: 250ms;
+  --dur-btn: 200ms;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  color-scheme: dark;
+}

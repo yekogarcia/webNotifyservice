@@ -1,0 +1,12 @@
+.wrap {
+  border: 0.0625rem dashed var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  text-align: center;
+  background: var(--surface);
+  display: grid;
+  gap: 0.25rem;
+  justify-items: center;
+}
+.title { font-weight: 600; font-size: 0.9375rem; }
+.hint { color: var(--text-muted); font-size: 0.875rem; margin-top: 0.25rem; }

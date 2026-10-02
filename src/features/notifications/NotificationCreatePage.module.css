@@ -1,0 +1,57 @@
+.page {
+  display: grid;
+  gap: var(--space-5);
+  max-width: 60rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(16.25rem, 20rem);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-purple-bright);
+  margin-bottom: 0.5rem;
+}
+
+.sub {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  max-width: 60ch;
+}
+
+.tips {
+  display: grid;
+  gap: 0.625rem;
+  padding: 1.125rem;
+  border-radius: var(--radius-lg);
+  border: 0.0625rem solid rgba(139, 92, 246, 0.16);
+  background: linear-gradient(180deg, rgba(139, 92, 246, 0.08), rgba(37, 99, 235, 0.04));
+}
+
+.tips p {
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.tips ul {
+  padding-left: 1.125rem;
+  color: var(--text-muted);
+  display: grid;
+  gap: 0.5rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 52.5em) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}

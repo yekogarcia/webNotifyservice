@@ -1,0 +1,59 @@
+.page { display: grid; gap: var(--space-4); }
+.card { background: var(--bg-soft); border: 0.0625rem solid var(--border); border-radius: 0.3125rem; padding: var(--space-4); display: grid; gap: var(--space-3); }
+.actions { display: inline-flex; gap: 0.5rem; flex-wrap: wrap; }
+.headBtns { display: inline-flex; gap: 0.75rem; flex-wrap: wrap; }
+.muted { color: var(--text-dim); }
+.configCell {
+  display: inline-block;
+  max-width: 20rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+.jsonField {
+  display: grid;
+  gap: 0.375rem;
+}
+.jsonLabel {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+.jsonInput {
+  width: 100%;
+  min-height: 13.75rem;
+  resize: vertical;
+  background: var(--surface);
+  border: 0.0625rem solid var(--border);
+  border-radius: 0.3125rem;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--text);
+  transition: border-color var(--dur-hover) var(--ease), box-shadow var(--dur-hover) var(--ease), background var(--dur-hover) var(--ease);
+}
+.jsonInput:hover { border-color: var(--surface-hover); }
+.jsonInput:focus {
+  border-color: var(--accent-purple);
+  outline: none;
+  box-shadow: 0 0 0 0.1875rem rgba(139, 92, 246, 0.18);
+}
+.jsonHint {
+  color: var(--text-dim);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.exampleBtn {
+  background: transparent;
+  border: 0.0625rem solid var(--border);
+  border-radius: 0.3125rem;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+.exampleBtn:hover { border-color: var(--accent-purple); color: var(--text); }

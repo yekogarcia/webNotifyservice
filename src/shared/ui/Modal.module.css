@@ -1,0 +1,36 @@
+.backdrop {
+  position: fixed; inset: 0; background: rgba(2, 6, 18, 0.7);
+  backdrop-filter: blur(0.375rem);
+  display: grid; place-items: center; padding: 1rem; z-index: 50;
+}
+.dialog {
+  width: min(40rem, 100%); background: var(--surface);
+  border: 0.0625rem solid var(--border); border-radius: 0.3125rem;
+  box-shadow: var(--shadow-card);
+  max-height: calc(100vh - 3rem);
+  max-height: calc(100dvh - 3rem);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 42.5em) {
+  .backdrop { padding: 0.5rem; }
+  .body { padding: 1rem; }
+  .head { padding: 0.75rem 1rem; }
+  .foot { padding: 0.75rem 1rem; }
+}
+.head { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; padding: 1rem 1.5rem; border-bottom: 0.0625rem solid var(--border); }
+.head h2 { font-size: 1.125rem; font-weight: 600; }
+.body { padding: 1.5rem; overflow: auto; }
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-top: 0.0625rem solid var(--border);
+  flex-wrap: wrap;
+}
+.dialogWide {
+  width: min(57.5rem, 100%);
+}

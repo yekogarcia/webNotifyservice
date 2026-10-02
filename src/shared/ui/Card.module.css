@@ -1,0 +1,23 @@
+.card {
+  background: var(--surface);
+  border: 0.0625rem solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-card);
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+  transition: transform var(--dur-card) var(--ease), border-color var(--dur-card) var(--ease), box-shadow var(--dur-card) var(--ease);
+}
+.card:hover { border-color: var(--surface-hover); }
+.glow-purple { box-shadow: var(--shadow-glow-purple); }
+.glow-blue { box-shadow: var(--shadow-glow-blue); }
+.glow-orange { box-shadow: var(--shadow-glow-orange); }
+.head { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem; }
+.sub { color: var(--text-muted); font-size: 0.875rem; margin-top: 0.25rem; }
+
+@media (max-width: 40em) {
+  .card {
+    padding: 1.125rem;
+  }
+}

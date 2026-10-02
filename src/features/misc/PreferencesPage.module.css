@@ -1,0 +1,4 @@
+.page { display: grid; gap: var(--space-4); }
+.muted { color: var(--text-muted); font-size: 0.8125rem; }
+.toggles { display: flex; flex-wrap: wrap; gap: var(--space-3); background: var(--bg-soft); border: 0.0625rem solid var(--border); border-radius: 0.3125rem; padding: var(--space-3); }
+.pre { background: var(--surface); border: 0.0625rem solid var(--border); border-radius: 0.3125rem; padding: var(--space-3); overflow: auto; font-size: 0.75rem; }

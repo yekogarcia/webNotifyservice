@@ -1,0 +1,154 @@
+@import './shared/styles/tokens.css';
+@import './shared/styles/reset.css';
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Escala tipográfica Dark UI Premium */
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.brand-logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.metric {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+
+.metric-xl {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: var(--surface-2);
+  border: 0.0625rem solid var(--border);
+  border-radius: 0.3125rem;
+  padding: 0.0625rem 0.375rem;
+}
+
+/* ——— Utilidades compartidas: cabeceras, toolbars alineadas y formularios ——— */
+
+/* Cabecera de página: título + botón "Nuevo/Crear" */
+.page-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.page-head .sub {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  margin-top: 0.25rem;
+}
+
+/* Fila input + botón alineados (misma base, misma altura (2.625rem)).
+ * Los Field llevan margin-bottom: aquí se anula para que el botón
+ * quede a la misma altura que el input. */
+.toolbar {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.toolbar > div {
+  margin-bottom: 0;
+}
+.toolbar .grow {
+  flex: 1 1 13.75rem;
+  min-width: 12.5rem;
+}
+
+/* Formularios dentro de modales: grilla adaptable */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  gap: 0 0.75rem;
+  align-items: start;
+}
+
+/* Acciones al pie del modal/popup: botones alineados a la derecha */
+.modal-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Grupo de checkboxes (canales, toggles) */
+.checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  border: 0.0625rem solid var(--border);
+  border-radius: 0.3125rem;
+  padding: 0.625rem 0.75rem;
+}
+.checks label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+.checks legend,
+.checks-title {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  padding: 0 0.25rem;
+}
+
+/* Texto de salida JSON */
+.pre {
+  background: var(--surface);
+  border: 0.0625rem solid var(--border);
+  border-radius: 0.3125rem;
+  padding: 0.75rem;
+  overflow: auto;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+}
+
+.muted {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.stack {
+  display: grid;
+  gap: 0.75rem;
+  align-content: start;
+}
+
+/* CKEditor dentro de modales: que nunca desborde el diálogo */
+.ck.ck-editor { max-width: 100%; }
+.ck.ck-toolbar { flex-wrap: wrap; }
+.ck.ck-content { overflow-wrap: anywhere; }

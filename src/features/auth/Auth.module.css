@@ -1,0 +1,22 @@
+.wrap { display: grid; gap: 1.125rem; }
+.wrap :global(form) { display: grid; gap: 0.5rem; }
+.sub {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.error {
+  background: rgba(248, 113, 113, 0.1);
+  border: 0.0625rem solid rgba(248, 113, 113, 0.4);
+  border-radius: 0.3125rem;
+  padding: 0.625rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #fca5a5;
+}
+.foot {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  text-align: center;
+  padding-top: 0.25rem;
+}
